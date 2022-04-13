@@ -252,6 +252,42 @@ width: 15%;
 	margin-top: -15%;
 }
 
+.paginate {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+}
+
+.paginate-item {
+    border: 1px solid #808080;
+    margin: 2px;
+    border-radius: 3px;
+    background-color: #DCDCDC;
+
+    transition: 0.2s;
+}
+
+.paginate-item a {
+    padding: 0.75rem;
+}
+
+.paginate a, .paginate a:visited {
+    color: #000000;
+}
+
+.paginate a {
+    text-decoration: none;
+}
+
+.paginate-item:hover {
+    background-color: #fff;
+    /* border-color: #003fa3; */
+}
+
+.paginate-item:hover a {
+    color: #2F4F4F;
+}
+
 </style>
 </head>
 <body>
@@ -300,11 +336,19 @@ width: 15%;
                     </div>
                     
                     <div class="post-footer">
-                        <button class="btn btn-white"><a href="112.html" style="text-decoration: none; color: black; ">Подробнее</a></button>
+                        <button class="btn btn-white" ><a href="112.html" style="text-decoration: none; color: black; ">Подробнее</a></button>
                         <button class="btn  btn-white"><a href="FORMA.html" style="text-decoration: none; color: black;">Оставить комментарий</a></button>
                     </div>
 
                 </article>
+</div>
+<div class="row ">
+                    <ul class="paginate">
+                    	<li class="paginate-item disabled"><a href="#"><</a></li>
+                        <li class="paginate-item"><a href="#">1</a></li>
+                        <li class="paginate-item"><a href="#">2</a></li> 
+                        <li class="paginate-item"><a href="#">></a></li>                       
+                    </ul>
 </div>
 
 
